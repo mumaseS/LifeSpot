@@ -1,0 +1,63 @@
+﻿header, footer, body, .video-container {
+    background-color: linen;
+}
+
+{
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+    /* Простые селекторы*/
+    .video-container{
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+/* Стили панели навигации */
+.navbar p {
+    color: darkgray;
+    padding-left: 15%;
+}
+    /* Стили панели навигации при наведении мышью */
+    .navbar p:hover {
+        color: aliceblue;
+    }
+
+/*Глобальные стили для хедеров на всём сайте*/
+header {
+    color: black;
+    padding-left: 0%;
+    padding-top: 0%;
+}
+/*Стиль хедера для главной страницы имеет приоритет,
+так как используется селектор по идентификатору*/
+#header-index {
+    color: #44453f;
+}
+/* Стили футера */
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%;
+    padding-left: 1%;
+}
+
+aside {
+     
+    height: 100%;
+    width: 10%;
+    position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 0;
+    font-size: large;
+}
+
+body {
+    padding-left: 11%;
+}
+
