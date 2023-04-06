@@ -29,7 +29,7 @@ namespace LifeSpot
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "index.html");
+                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "index.html");
 
                     // Загружаем шаблон страницы, вставляя в него элементы
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
@@ -41,7 +41,7 @@ namespace LifeSpot
 
                 endpoints.MapGet("/testing", async context =>
                 {
-                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "testing.html");
+                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views","testing.html");
 
                     // Загружаем шаблон страницы, вставляя в него элементы
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
@@ -53,7 +53,7 @@ namespace LifeSpot
                 
                 endpoints.MapGet("/about", async context =>
                 {
-                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "Shared", "about.html");
+                    var viewPath = Path.Combine(Directory.GetCurrentDirectory(), "Views", "about.html");
 
                     // Загружаем шаблон страницы, вставляя в него элементы
                     var html = new StringBuilder(await File.ReadAllTextAsync(viewPath))
