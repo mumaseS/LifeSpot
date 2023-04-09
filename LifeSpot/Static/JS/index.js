@@ -40,6 +40,8 @@ function checkAge() {
 }
 
 
+
+
 function filterContent() {
     let elements = document.getElementsByClassName('video-container');
 

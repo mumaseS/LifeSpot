@@ -2,11 +2,25 @@
     background-color: linen;
 }
 
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
 {
     font-family: "Helvetica 65 Medium", sans-serif;
 }
-    /* Простые селекторы*/
-    .video-container{
+/* Простые селекторы*/
+.video-container {
     display: inline-block;
     padding-left: 1%;
     padding-top: 1%;
@@ -44,7 +58,6 @@ footer {
 }
 
 aside {
-     
     height: 100%;
     width: 10%;
     position: absolute; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
@@ -60,4 +73,3 @@ aside {
 body {
     padding-left: 11%;
 }
-
