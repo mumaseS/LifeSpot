@@ -12,15 +12,48 @@
 <body>
     <header id="header-index">
         <h1>LifeSpot - о проекте</h1>
-        <p>На сайте собраны прямые трансляции из улиц разных городов мира.</p>
-        <p>Все трансляции находятся в открытых источниках, в данный момент - youtube.com</p>
+        <p>На сайте собраны прямые трансляции из улиц разных городов мира. </p>
+        <p>Все трансляции находятся в открытых источниках, в данный момент - youtube.com. </p>
         <p>Отзыв о работе сайта можно оставить здесь</p>
-
     </header>
+
+    <div class="slideshowContainer" id="slideContainer">
+
+        <div class="mySlides">
+            <img id="img1" class="slideImg" src="../Static/Images/london.jpg" style="width:100%">
+            <div class="text">London</div>
+        </div>
+
+        <div class="mySlides">
+            <img class="slideImg" src="../Static/Images/ny.jpg" style="width:100%">
+            <div class="text">New York</div>
+        </div>
+
+        <div class="mySlides">
+            <img class="slideImg" src="../Static/Images/spb.jpg" style="width:100%">
+            <div class="text">Saint Petersburg</div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div style="text-align:center">
+        <p>Для прокрутки/выбора слайдов воспользуйтесь стрелками или щелкните на одну из точек под рисунком</p>
+    </div>
+
 
     <div class="reviews">
         <div class="review-button">
-            <button onclick="getComment()">Оставить отзыв</button>
+            <button onclick="addComment()">Оставить отзыв</button>
         </div>
     </div>
 
